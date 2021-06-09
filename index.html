@@ -1,0 +1,49 @@
+<html><head>
+<title>
+Web Dev Project
+</title>
+</head>
+<body bgcolor="plum">
+<h3>Name : Samragnee Bose<br>
+Reg. no. : 20BCE10193<br></h3>
+<hr>
+<script>
+function submission()
+{
+alert("You have submitted the form!");
+}
+function guessNumber()
+{
+const random=Math.floor(Math.random()*10)+1;
+let number=parseInt(prompt("Guess a number from 1 to 10 :"));
+while(number!==random)
+{
+number=parseInt(prompt("Guess a number from 1 to 10 :"));
+}
+if(number==random)
+{
+alert("You guessed the correct number!");
+}
+}
+</script>
+<center><h1>Fill the Form!</h1>
+<form>
+<label type="text">First Name</label>
+<input type="text"><br>
+<label type="text">Last Name</label>
+<input type="text"><br>
+<label type="text">Age</label>
+<input type="text"><br>
+<label type="text">Contact No.</label>
+<input type="text"><br>
+<label type="text">Password</label>
+<input type="password"><br>
+<button type="reset">Reset</button>
+<button onclick="submission()" type="submit">Submit</button>
+</form></center>
+<hr>
+<center><h1>Guess the Number!</h1><br>
+<img src="Guess the Number.jpg" alt="Guess the Number" style="height: 200;"></center><br>
+<center><button onclick="guessNumber()">Click here to play</button></center>
+<hr>
+</body></html>
